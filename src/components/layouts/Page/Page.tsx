@@ -1,5 +1,5 @@
 import { PageStyles } from '@layout/styles';
-import { Header, Main } from '@segments/components';
+import { Footer, Header, Main } from '@segments/components';
 import { ReactNode } from 'react';
 
 interface Props {
@@ -12,6 +12,7 @@ export default function Page({ headerChildren, mainChildren }: Props) {
         <body className={PageStyles.Page}>
             <Header>{headerChildren}</Header>
             <Main>{mainChildren}</Main>
+            <Footer />
         </body>
     );
 }
