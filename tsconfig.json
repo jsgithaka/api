@@ -21,6 +21,8 @@
         "paths": {
             "@layouts/components": ["./src/exports/components/layouts.ts"],
             "@layout/styles": ["./src/exports/styles/layouts.ts"],
+            "@segments/components": ["./src/exports/components/segments.ts"],
+            "@segments/styles": ["./src/exports/styles/segments.ts"],
             "@/*": ["./src/*"]
         }
     },
