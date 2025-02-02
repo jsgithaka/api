@@ -1,5 +1,10 @@
-import { PageStyles } from '@/exports/styles/layouts';
+import { PageStyles } from '@layout/styles';
+import { ReactNode } from 'react';
 
-export default function Page() {
-    return <body className={PageStyles.Page}></body>;
+interface Props {
+    children: ReactNode;
+}
+
+export default function Page({ children }: Props) {
+    return <body className={PageStyles.Page}>{children}</body>;
 }
