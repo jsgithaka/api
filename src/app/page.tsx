@@ -18,14 +18,6 @@ export default function Home() {
                         href='/register'
                         name='Register'
                     />
-                    <NavigationItem
-                        href='/account'
-                        name='Account'
-                    />
-                    <NavigationItem
-                        href='/users'
-                        name='Users'
-                    />
                 </>
             }
             mainChildren={<></>}
