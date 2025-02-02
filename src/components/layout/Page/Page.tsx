@@ -1,3 +1,5 @@
+import { PageStyles } from '@layout/styles';
+
 export default function Page() {
-    return <body></body>;
+    return <body className={PageStyles.Page}></body>;
 }
