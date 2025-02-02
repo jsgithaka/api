@@ -10,7 +10,7 @@ interface Props {
 export default function Page({ headerChildren, mainChildren }: Props) {
     return (
         <body className={PageStyles.Page}>
-            <Header />
+            <Header>{headerChildren}</Header>
             <Main />
         </body>
     );
