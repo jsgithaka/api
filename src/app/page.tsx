@@ -1,5 +1,10 @@
 import { Page } from '@/exports/components/layouts';
 
 export default function Home() {
-    return <Page />;
+    return (
+        <Page
+            headerChildren={<></>}
+            mainChildren={<></>}
+        />
+    );
 }
