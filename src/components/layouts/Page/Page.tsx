@@ -11,7 +11,7 @@ export default function Page({ headerChildren, mainChildren }: Props) {
     return (
         <body className={PageStyles.Page}>
             <Header>{headerChildren}</Header>
-            <Main />
+            <Main>{mainChildren}</Main>
         </body>
     );
 }
