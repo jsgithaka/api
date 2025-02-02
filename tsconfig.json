@@ -20,6 +20,7 @@
         ],
         "paths": {
             "@layout/components": ["./src/exports/components/layout.ts"],
+            "@layout/styles": ["./src/exports/styles/layout.ts"],
             "@/*": ["./src/*"]
         }
     },
