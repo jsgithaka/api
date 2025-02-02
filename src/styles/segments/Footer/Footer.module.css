@@ -1,0 +1,8 @@
+.Footer {
+    padding: 32px;
+    width: calc(100% - 64px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
