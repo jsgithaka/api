@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
-export default function _Register() {
+export default function handleRegister() {
     const [api, setApi] = useState('');
     const [form, setForm] = useState({
         email: '',
         password: '',
         confirm_password: '',
     });
-    const handleRegister = async (event: Event) => {
+    const register = async (event: Event) => {
         event.preventDefault();
         const response = await fetch('/api/register', {
             method: 'POST',
@@ -18,5 +18,5 @@ export default function _Register() {
         setApi(apiResponse.api);
     };
 
-    return { api, handleRegister, form, setForm };
+    return { api, register, form, setForm };
 }
