@@ -2,7 +2,6 @@
 
 import { View } from '@segments/components';
 import { Form, Input } from '@shared/components';
-import { NextResponse } from 'next/server';
 import { useState } from 'react';
 
 export default function _Register() {
@@ -29,18 +28,30 @@ export default function _Register() {
                     placeholder='your@email.com'
                     label='Email'
                     id='email'
+                    method={(event) =>
+                        setForm({ ...form, email: event.target.value })
+                    }
                 />
                 <Input
                     type='password'
                     placeholder='********'
                     label='Password'
                     id='password'
+                    method={(event) =>
+                        setForm({ ...form, password: event.target.value })
+                    }
                 />
                 <Input
                     type='password'
                     placeholder='********'
                     label='Confirm Password'
                     id='confirm_password'
+                    method={(event) =>
+                        setForm({
+                            ...form,
+                            confirm_password: event.target.value,
+                        })
+                    }
                 />
                 <Input
                     type='submit'
