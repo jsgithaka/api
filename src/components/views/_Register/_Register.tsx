@@ -20,7 +20,7 @@ export default function _Register() {
                 <Input
                     type='password'
                     placeholder='********'
-                    label='Password'
+                    label='Confirm Password'
                     id='confirm_password'
                 />
                 <Input
