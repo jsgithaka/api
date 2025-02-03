@@ -1,5 +1,6 @@
 import { Page } from '@/exports/components/layouts';
 import { NavigationItem } from '@/exports/components/shared';
+import { _Login } from '@views/components';
 
 export default function Login() {
     return (
@@ -20,7 +21,11 @@ export default function Login() {
                     />
                 </>
             }
-            mainChildren={<></>}
+            mainChildren={
+                <>
+                    <_Login />
+                </>
+            }
         />
     );
 }
