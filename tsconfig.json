@@ -23,6 +23,8 @@
             "@layout/styles": ["./src/exports/styles/layouts.ts"],
             "@segments/components": ["./src/exports/components/segments.ts"],
             "@segments/styles": ["./src/exports/styles/segments.ts"],
+            "@shared/components": ["./src/exports/components/shared.ts"],
+            "@shared/styles": ["./src/exports/styles/shared.ts"],
             "@views/components": ["./src/exports/components/views.ts"],
             "@views/styles": ["./src/exports/styles/views.ts"],
             "@/*": ["./src/*"]
