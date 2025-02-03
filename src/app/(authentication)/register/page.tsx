@@ -1,5 +1,6 @@
 import { Page } from '@/exports/components/layouts';
 import { NavigationItem } from '@/exports/components/shared';
+import { _Register } from '@views/components';
 
 export default function Register() {
     return (
@@ -20,7 +21,11 @@ export default function Register() {
                     />
                 </>
             }
-            mainChildren={<></>}
+            mainChildren={
+                <>
+                    <_Register />
+                </>
+            }
         />
     );
 }
