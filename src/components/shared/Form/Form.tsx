@@ -1,3 +1,9 @@
-export default function Form() {
-    return <form></form>;
+import { ReactNode } from 'react';
+
+interface FormProps {
+    children: ReactNode;
+}
+
+export default function Form({ children }: FormProps) {
+    return <form>{children}</form>;
 }
