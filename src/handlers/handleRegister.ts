@@ -11,7 +11,10 @@ export default function handleRegister() {
         event.preventDefault();
         const response = await fetch('/api/register', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': '1234',
+            },
             body: JSON.stringify(form),
         });
         const apiResponse = await response.json();
