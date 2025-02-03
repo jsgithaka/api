@@ -23,7 +23,7 @@ export default function _Register() {
     };
     return (
         <View id='register'>
-            <Form>
+            <Form method={handleRegister}>
                 <Input
                     type='email'
                     placeholder='your@email.com'
