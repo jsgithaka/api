@@ -4,7 +4,7 @@ interface InputProps {
     type: string;
     placeholder?: string;
     value?: string;
-    method?: () => void;
+    method?: (event: any) => void;
 }
 
 export default function Input({
