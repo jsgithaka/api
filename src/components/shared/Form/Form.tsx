@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 interface FormProps {
     children: ReactNode;
-    method: () => void;
+    method: (event: any) => void;
 }
 
 export default function Form({ children, method }: FormProps) {
