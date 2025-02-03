@@ -27,6 +27,7 @@
             "@shared/styles": ["./src/exports/styles/shared.ts"],
             "@views/components": ["./src/exports/components/views.ts"],
             "@views/styles": ["./src/exports/styles/views.ts"],
+            "@handlers": ["./src/exports/handlers.ts"],
             "@/*": ["./src/*"]
         }
     },
