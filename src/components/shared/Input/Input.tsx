@@ -4,6 +4,7 @@ interface InputProps {
     type: string;
     placeholder?: string;
     value?: string;
+    method?: () => void;
 }
 
 export default function Input({
@@ -12,6 +13,7 @@ export default function Input({
     type,
     placeholder,
     value,
+    method,
 }: InputProps) {
     return (
         <div>
@@ -21,6 +23,7 @@ export default function Input({
                 id={id}
                 placeholder={placeholder}
                 value={value}
+                onChange={method}
             />
         </div>
     );
