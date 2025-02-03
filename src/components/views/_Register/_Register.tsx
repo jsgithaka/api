@@ -5,7 +5,7 @@ import { Form, Input } from '@shared/components';
 import { useState } from 'react';
 
 export default function _Register() {
-    const [API, setAPI] = useState('');
+    const [api, setApi] = useState('');
     const [form, setForm] = useState({
         email: '',
         password: '',
@@ -13,15 +13,17 @@ export default function _Register() {
     });
     const handleRegister = async (event: Event) => {
         event.preventDefault();
-        const response = await fetch('/api/authentication/register', {
+        const response = await fetch('/api/register', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(form),
         });
-        console.log(response);
+        const apiResponse = await response.json();
+        setApi(apiResponse.api);
     };
     return (
         <View id='register'>
+            {api && <p>{api}</p>}
             <Form method={handleRegister}>
                 <Input
                     type='email'
